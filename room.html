@@ -703,7 +703,7 @@
         <!-- Newsletter Start -->
 
 
-      <!-- Footer Start -->
+        <!-- Footer Start -->
         <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
             <div class="container pb-5">
                 <div class="row g-5">
@@ -751,10 +751,11 @@
                             </div>
                             <div class="col-md-6">
                                 <h6 class="section-title text-start text-primary text-uppercase mb-4">Our Hotels</h6>
-                                <a class="btn btn-link" href="./room.html">Hotel Galaxy</a>
-                                <a class="btn btn-link" href="./room.html">Hotel Sonai</a>
-                                <a class="btn btn-link" href="./room.html">Hotel Peaceful Studio</a>
-                                <a class="btn btn-link" href="./room.html">The Farmhouse</a>
+                                <a class="btn btn-link" id="galaxy-section">Hotel Galaxy</a>
+                                <a class="btn btn-link" id="sonai-section">Hotel Sonai</a>
+                                <a class="btn btn-link" id="peaceful-section">Hotel Peaceful Studio</a>
+                                <a class="btn btn-link" id="farmhouse-section">The Farmhouse</a>
+                                <!-- <a class="btn btn-link" onclick="window.location.href='/room.html#nav-Farmhouse';">The Farmhouse</a> -->
                                 <!-- <a class="btn btn-link" href="">GYM & Yoga</a> -->
                             </div>
                         </div>
@@ -767,8 +768,6 @@
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                             &copy; <a class="border-bottom" href="www.peacefulstudio.com">Peaceful Studio</a>, All Right
                             Reserved.
-
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                             Designed By <a class="border-bottom" href="https://www.rahulborhade.me">Rahul Borhade</a>
                         </div>
                         <div class="col-md-6 text-center text-md-end">
@@ -784,6 +783,39 @@
             </div>
         </div>
         <!-- Footer End -->
+        <script>
+            const farmhousesection = document.getElementById('farmhouse-section');
+            farmhousesection.addEventListener('click', (event) => {
+              event.preventDefault(); // Prevents the default behavior of the link
+          
+              // Redirect to room.html
+              window.location.href = 'room.html#nav-farmhouse-tab';
+            });
+
+            const peacefulsection = document.getElementById('peaceful-section');
+            peacefulsection.addEventListener('click', (event) => {
+              event.preventDefault(); // Prevents the default behavior of the link
+          
+              // Redirect to room.html
+              window.location.href = 'room.html#nav-contact-tab';
+            });
+            const sonaisection = document.getElementById('sonai-section');
+            sonaisection.addEventListener('click', (event) => {
+              event.preventDefault(); // Prevents the default behavior of the link
+          
+              // Redirect to room.html
+              window.location.href = 'room.html#nav-profile-tab';
+            });
+            const galaxysection = document.getElementById('galaxy-section');
+            galaxysection.addEventListener('click', (event) => {
+              event.preventDefault(); // Prevents the default behavior of the link
+          
+              // Redirect to room.html
+              window.location.href = 'room.html#nav-home-tab';
+            });
+
+
+        </script>
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>

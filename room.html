@@ -32,7 +32,7 @@
             rel="stylesheet">
 
         <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.css" rel="stylesheet">
         <link href="lib/owlcarousel/assets/owl.carousel.min.css"
             rel="stylesheet">
         <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
@@ -295,7 +295,7 @@
                         </div>
                     </nav>
                     <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="nav-home"
+                        <div id="nav-home" class="tab-pane fade show active"
                             role="tabpanel" aria-labelledby="nav-home-tab">
                             <div class="row g-4">
                                 <div class="col-lg-4 col-md-6 wow ">
@@ -1425,44 +1425,45 @@
             };
         </script> -->
 
-        <!-- Make sure to include the Bootstrap JavaScript library in your HTML -->
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
-
         <!-- Add this JavaScript code to your room.html -->
-        <script>
-            window.onload = function() {
-              var tabButton1 = document.getElementById('nav-home');
-              if (tabButton1) {
-                tabButton1.click(); // Trigger a click on the button with the id "nav-home-tab"
-              }
-            };
-        </script>
-        <script>
-            window.onload = function() {
-              var tabButtons = document.getElementById('nav-profile-tab');
-              if (tabButtons) {
-                tabButtons.click(); // Trigger a click on the button with the id "nav-home-tab"
-              }
-            };
-        </script>
+        <!-- <script>
+           window.onload = function() {
+                var tabButton1 = document.getElementById('nav-home');
+                if (tabButton1) {
+                    tabButton1.click(); // Trigger a click on the button with the id "nav-home"
+                }
 
-        <script>
-            window.onload = function() {
-              var tabButtons = document.getElementById('nav-contact-tab');
-              if (tabButtons) {
-                tabButtons.click(); // Trigger a click on the button with the id "nav-home-tab"
-              }
-            };
-        </script>
+                var tabButtons = document.getElementById('nav-profile');
+                if (tabButtons) {
+                    tabButtons.click(); // Trigger a click on the button with the id "nav-profile-tab"
+                }
 
-        <script>
-            window.onload = function() {
-              var tabButton = document.getElementById('nav-farmhouse-tab');
-              if (tabButton) {
-                tabButton.click(); // Trigger a click on the button with the id "nav-profile-tab"
-              }
+                var tabButton = document.getElementById('nav-contact');
+                if (tabButton) {
+                    tabButton.click(); // Trigger a click on the button with the id "nav-contact-tab"
+                }
+
+                var tabButtonz = document.getElementById('nav-farmhouse');
+                if (tabButtonz) {
+                    tabButtonz.click(); // Trigger a click on the button with the id "nav-farmhouse-tab"
+                }
             };
+
+        </script> -->
+        <script>
+            // Get the hash from the URL
+            const hash = window.location.hash;
+          
+            // Check if the hash matches your targets and programmatically click the corresponding button
+            if (hash === "#nav-home-tab") {
+              document.getElementById("nav-home-tab").click();
+            } else if (hash === "#nav-profile-tab") {
+              document.getElementById("nav-profile-tab").click();
+            } else if (hash === "#nav-contact-tab") {
+              document.getElementById("nav-contact-tab").click();
+            } else if (hash === "#nav-farmhouse-tab") {
+              document.getElementById("nav-farmhouse-tab").click();
+            }
         </script>
 
     </body>

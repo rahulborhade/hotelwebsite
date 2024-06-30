@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops! Something Went Wrong</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f6f8fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .error-container {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+
+        svg {
+            width: 80px;
+            height: 80px;
+            fill: #cb2431;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0366d6;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0552b5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="error-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="octicon octicon-alert">
+            <path fill-rule="evenodd"
+                d="M1.5 12a10.5 10.5 0 1 1 21 0 10.5 10.5 0 0 1-21 0zM12 3a.9.9 0 0 0-.9.9v5.7a.9.9 0 1 0 1.8 0V3.9A.9.9 0 0 0 12 3zm-1.7 15.3a1.8 1.8 0 0 1 1.7-1.3c.9 0 1.7.8 1.7 1.7v.3c0 .5-.2 1-.6 1.3a1.7 1.7 0 0 1-2.4-2.4zm.7-7.4a.9.9 0 1 0 1.8 0v4.5a.9.9 0 1 0-1.8 0v-4.5z" />
+        </svg>
+        <h1>Oops! Something Went Wrong.</h1>
+        <p>We apologize for the inconvenience. Please contact your developer for assistance.</p>
+    </div>
+</body>
+
+</html>
